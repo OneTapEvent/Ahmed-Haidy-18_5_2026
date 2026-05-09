@@ -6,6 +6,7 @@ import { FloralCorner } from "@/components/FloralCorner";
 import { Countdown } from "@/components/Countdown";
 import { useLenis } from "@/hooks/useLenis";
 import { useCurtain } from "@/components/CurtainTransition";
+import heroImg from "@/assets/hero.jpeg";
 
 const Details = () => {
   useLenis();
@@ -45,7 +46,7 @@ const Details = () => {
         <FloralCorner position="tl" />
         <FloralCorner position="br" />
 
-        <div className="hero-mono relative">
+        {/* <div className="hero-mono relative">
           <h1 className="font-display text-[7rem] md:text-[10rem] leading-none text-gold drop-shadow-sm">
             أ{" "}
             <span className="text-navy text-5xl md:text-7xl align-middle">
@@ -53,6 +54,15 @@ const Details = () => {
             </span>{" "}
             هـ
           </h1>
+        </div> */}
+        <div className="hero-mono relative w-64 h-[22rem] md:w-[28rem] md:h-[35rem] mx-auto mb-6 p-2 md:p-3 bg-white/30 backdrop-blur-sm gold-border shadow-soft">
+          <div className="w-full h-full overflow-hidden border border-gold/30">
+            <img
+              src={heroImg}
+              alt="Ahmed & Haidy"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         <div className="gold-divider w-40 my-6 hero-tag" />
@@ -125,7 +135,7 @@ const Details = () => {
               onClick={goToGallery}
               className="btn-gold mt-12 px-10 py-4 rounded-full font-display text-lg md:text-xl"
             >
-              استكشف ذكرياتنا ✦
+              قصتنا ✦
             </button>
           </div>
         </div>
@@ -160,7 +170,7 @@ const Details = () => {
               rel="noreferrer"
               className="btn-gold inline-block px-8 py-3 rounded-full font-display"
             >
-              افتح في خرائط جوجل
+              Location
             </a>
           </div>
         </div>

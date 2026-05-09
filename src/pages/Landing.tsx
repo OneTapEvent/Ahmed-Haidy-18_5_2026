@@ -101,25 +101,23 @@ const Landing = () => {
             <div className="absolute inset-3 rounded-2xl border border-gold/30 pointer-events-none" />
 
             {/* Floral accent top */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-3">
               <Heart className="text-gold" size={32} />
             </div>
 
-            <p className="text-navy/60 text-xs tracking-[0.3em] mb-3">
+            {/* <p className="text-navy/60 text-xs tracking-[0.3em] mb-3">
               بِسْمِ اللَّهِ
-            </p>
+            </p> */}
 
-            <h1 className="font-display text-4xl text-navy leading-snug mb-2">
+            {/* <h1 className="font-display text-4xl text-navy leading-snug mb-2">
               أهلاً بك
-            </h1>
+            </h1> */}
 
-            <div className="gold-divider w-24 mx-auto my-5" />
+            {/* <div className="gold-divider w-24 mx-auto my-5" /> */}
 
-            <p className="text-navy/75 leading-loose text-sm mb-1">
-              يسعدنا دعوتك لمشاركة
-            </p>
+            <p className="text-navy/75 leading-loose text-sm mb-1">شارك</p>
             <p className="font-display text-2xl text-gold mb-1">أحمد & هايدي</p>
-            <p className="text-navy/75 leading-loose text-sm mb-8">
+            <p className="text-navy/75 leading-loose text-sm mb-6">
               في هذه اللحظة الجميلة
             </p>
 
@@ -127,7 +125,7 @@ const Landing = () => {
               onClick={handleEnter}
               className="btn-gold w-full py-4 rounded-full font-display text-lg tracking-wide"
             >
-              ✦ ادخل
+              ✦ ابدأ ✦
             </button>
           </div>
         </div>
