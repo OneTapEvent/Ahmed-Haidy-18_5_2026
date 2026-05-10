@@ -7,7 +7,7 @@ import envelope from "@/assets/envelope.png";
 import g1 from "@/assets/gallery-1.jpeg";
 import g2 from "@/assets/gallery-2.jpeg";
 import g3 from "@/assets/gallery-3.jpeg";
-import g4 from "@/assets/Hero.jpeg";
+import g4 from "@/assets/hero.jpeg";
 
 const photos = [
   { src: g3, span: "col-span-1 row-span-1 md:col-span-2 md:row-span-4" },
