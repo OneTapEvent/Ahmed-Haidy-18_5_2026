@@ -1,7 +1,20 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
-import { Calendar, Clock, MapPin, Heart, ChevronDown } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Heart,
+  ChevronDown,
+  Gift,
+  Hotel,
+  Users,
+  HelpCircle,
+  Sparkles,
+  CheckCircle,
+  List,
+} from "lucide-react";
 import { FloralCorner } from "@/components/FloralCorner";
 import { Countdown } from "@/components/Countdown";
 import { useLenis } from "@/hooks/useLenis";
@@ -46,15 +59,6 @@ const Details = () => {
         <FloralCorner position="tl" />
         <FloralCorner position="br" />
 
-        {/* <div className="hero-mono relative">
-          <h1 className="font-display text-[7rem] md:text-[10rem] leading-none text-gold drop-shadow-sm">
-            أ{" "}
-            <span className="text-navy text-5xl md:text-7xl align-middle">
-              &
-            </span>{" "}
-            هـ
-          </h1>
-        </div> */}
         <div className="hero-mono relative w-64 h-[22rem] md:w-[28rem] md:h-[35rem] mx-auto mb-6 p-2 md:p-3 bg-white/30 backdrop-blur-sm gold-border shadow-soft">
           <div className="w-full h-full overflow-hidden border border-gold/30">
             <img
@@ -138,6 +142,78 @@ const Details = () => {
               قصتنا ✦
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* TIMELINE */}
+      <section className="relative px-6 py-16 flex justify-center">
+        <div className="w-full max-w-5xl text-center">
+          <div className="mb-12">
+            <p className="text-navy/60 tracking-widest text-sm mb-2">رحلتنا</p>
+            <h3 className="font-display text-4xl md:text-5xl text-navy">
+              كيف بدأنا
+            </h3>
+            <div className="gold-divider w-32 mx-auto mt-6" />
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-stretch">
+            {/* Timeline Item 1 */}
+            <div className="flex-1 bg-white/40 backdrop-blur-sm p-8 rounded-2xl border border-gold/30 shadow-soft hover:-translate-y-2 transition-transform duration-500">
+              <div className="w-16 h-16 rounded-full bg-gradient-gold mx-auto flex items-center justify-center text-white mb-6 shadow-gold">
+                <Heart size={28} />
+              </div>
+              <h4 className="font-display text-2xl text-navy mb-3">
+                اللقاء الأول
+              </h4>
+              <p className="text-navy/70 text-sm leading-relaxed">
+                حيث بدأت القصة بنظرة وابتسامة، في صدفة لم تكن في الحسبان ولكنها
+                كانت أجمل أقدارنا.
+              </p>
+            </div>
+
+            {/* Timeline Item 2 */}
+            <div className="flex-1 bg-white/40 backdrop-blur-sm p-8 rounded-2xl border border-gold/30 shadow-soft md:mt-12 hover:-translate-y-2 transition-transform duration-500">
+              <div className="w-16 h-16 rounded-full bg-gradient-gold mx-auto flex items-center justify-center text-white mb-6 shadow-gold">
+                <Calendar size={28} />
+              </div>
+              <h4 className="font-display text-2xl text-navy mb-3">الخطوبة</h4>
+              <p className="text-navy/70 text-sm leading-relaxed">
+                يوم أعلنا فيه حبنا للعالم، وتعاهدنا على أن نمضي معاً في دروب
+                الحياة.
+              </p>
+            </div>
+
+            {/* Timeline Item 3 */}
+            <div className="flex-1 bg-white/40 backdrop-blur-sm p-8 rounded-2xl border border-gold/30 shadow-soft hover:-translate-y-2 transition-transform duration-500">
+              <div className="w-16 h-16 rounded-full bg-gradient-gold mx-auto flex items-center justify-center text-white mb-6 shadow-gold">
+                <Clock size={28} />
+              </div>
+              <h4 className="font-display text-2xl text-navy mb-3">
+                يوم الزفاف
+              </h4>
+              <p className="text-navy/70 text-sm leading-relaxed">
+                تتويجاً لحبنا، ننتظركم لتشاركونا فرحتنا في هذا اليوم الاستثنائي.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PARENTS ACKNOWLEDGEMENT */}
+      <section className="relative px-6 py-16 flex justify-center">
+        <div className="w-full max-w-4xl text-center">
+          <div className="mb-12">
+            <Users className="mx-auto text-gold mb-4" size={32} />
+            <h3 className="font-display text-4xl md:text-5xl text-navy">
+              عائلتنا
+            </h3>
+            <div className="gold-divider w-24 mx-auto mt-4" />
+          </div>
+          <p className="text-navy/80 leading-relaxed text-lg max-w-2xl mx-auto">
+            بفضل دعواتهم ودعمهم المستمر، وصلنا إلى هذا اليوم السعيد. نشكر
+            عائلاتنا من أعماق قلوبنا على كل الحب والتضحيات التي قدموها لنا طوال
+            حياتنا.
+          </p>
         </div>
       </section>
 

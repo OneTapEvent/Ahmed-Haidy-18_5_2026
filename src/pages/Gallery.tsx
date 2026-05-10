@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { Send, Mail, X } from "lucide-react";
+import { Send, Mail, X, Play, Quote, Music, MessageSquare } from "lucide-react";
 import { FloralCorner } from "@/components/FloralCorner";
 import { useLenis } from "@/hooks/useLenis";
 import envelope from "@/assets/envelope.png";
@@ -15,7 +15,7 @@ const photos = [
 ];
 
 // TODO: put real WhatsApp number (E.164 without +)
-const WHATSAPP = "201014108539";
+const WHATSAPP = "201013698183";
 
 const Gallery = () => {
   useLenis();
@@ -159,9 +159,23 @@ const Gallery = () => {
               </section>
             </div>
 
+            <div className="max-w-4xl mx-auto px-6 py-12 md:py-24 text-center relative">
+              <Quote
+                className="absolute top-10 md:top-20 left-1/2 -translate-x-1/2 text-gold/10"
+                size={100}
+              />
+              <h3 className="font-display text-3xl md:text-5xl text-navy leading-relaxed relative z-10">
+                "ليس الحب أن ننظر إلى بعضنا البعض، بل أن ننظر معاً في نفس
+                الاتجاه."
+              </h3>
+              <p className="text-gold mt-6 tracking-widest font-display text-xl md:text-2xl">
+                — أنطوان دي سانت إكزوبيري
+              </p>
+            </div>
+
             <div
               ref={gridRef}
-              className="grid grid-cols-2 auto-rows-[180px] md:auto-rows-[220px] gap-4"
+              className="grid grid-cols-2 auto-rows-[180px] md:auto-rows-[220px] gap-4 pb-20"
             >
               {photos.map((p, i) => (
                 <div
